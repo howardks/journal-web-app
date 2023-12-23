@@ -12,13 +12,11 @@ body {
 
 .header {
   background-color: #B9D7EA;
+  font-size: x-large;
 }
 
 .content {
   flex: 1 0 auto;
-  border: 2px solid #B9D7EA;
-  border-radius: 10px;
-  margin: 10px;
 }
 
 .footer {
@@ -29,4 +27,5 @@ body {
 
 .header, .content, .footer {
   padding-left: 10px;
+  padding-right: 10px;
 }

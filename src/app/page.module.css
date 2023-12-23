@@ -1,0 +1,18 @@
+.outerDiv {
+    margin-top: 10px;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #B9D7EA;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+}

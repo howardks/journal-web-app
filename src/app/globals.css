@@ -3,25 +3,30 @@ html, body {
 }
 
 body {
-  background-color: gray;
+  background-color: #F7FBFC;
+  color: #14274E;
   margin: 0px;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  background-color: aqua;
+  background-color: #B9D7EA;
 }
 
 .content {
   flex: 1 0 auto;
+  border: 2px solid #B9D7EA;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .footer {
   flex-shrink: 0;
-  background-color: burlywood;
+  background-color: #B9D7EA;
+  text-align: center;
 }
 
 .header, .content, .footer {
-  padding: 10px;
+  padding-left: 10px;
 }

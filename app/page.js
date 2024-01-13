@@ -1,4 +1,5 @@
 import data from "@/app/data/posts.json";
+import Post from "@/app/post";
 
 export default function Home() {
   return (
@@ -7,10 +8,7 @@ export default function Home() {
         Blog Title
       </h1>
       {data.map((post, index) => (
-        <div className="m-3 mb-0 border border-primary" key={index}>
-          <h2 className="m-1">{post.title}</h2>
-          <p className="m-1">{post.content}</p>
-        </div>
+        <Post key={index} title={post.title} content={post.content} />
       ))}
     </div>
   );

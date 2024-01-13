@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function Header() {
+export default function Header(props) {
     useEffect(() => {
         require("bootstrap/dist/js/bootstrap.bundle.min.js");
     }, []);
@@ -15,8 +15,8 @@ export default function Header() {
                 </div>
 
                 <div className="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-primary me-2">Sign-up</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-outline-primary me-2" onClick={props.signup}>Sign-up</button>
+                    <button type="button" class="btn btn-primary" onClick={props.login}>Login</button>
                 </div>
             </header>
         </div>

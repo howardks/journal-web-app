@@ -11,11 +11,23 @@ export const metadata = {
   description: 'Online Journal',
 };
 
+async function login() {
+  "use server";
+}
+
+async function signup() {
+  "use server";
+}
+
+async function logout() {
+  "use server";
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        <Header login={login} signup={signup} logout={logout} />
         {children}
         <Footer />
       </body>

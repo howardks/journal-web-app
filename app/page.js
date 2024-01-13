@@ -1,15 +1,13 @@
-import data from "@/app/data/posts.json";
-import Post from "@/app/post";
-
-export default function Home() {
+export default function Home(props) {
   return (
-    <div>
+    <div className="text-center mt-4">
       <h1 className="display-4 ms-3">
-        Blog Title
+        Welcome to Web Journal!
       </h1>
-      {data.map((post, index) => (
-        <Post key={index} title={post.title} content={post.content} />
-      ))}
+      <div>
+        <button type="button" class="btn btn-outline-primary me-2" onClick={props.signup}>Sign-up</button>
+        <button type="button" class="btn btn-primary" onClick={props.login}>Login</button>
+      </div>
     </div>
   );
 }
